@@ -7,17 +7,15 @@ function StringChallenge(num) {
   const ChallengeToken = "gvthuljp21da";
   const newString = result + ChallengeToken;
   let finalyStr = "";
-  let count=0
+  let count = 0;
   for (let i = 0; i < newString.length; i++) {
-    count++
-    if (count  == 4){ 
-        finalyStr += "_"
-        count =0
-    }
-    else finalyStr += newString[i];
+    count++;
+    if (count == 4) {
+      finalyStr += "_";
+      count = 0;
+    } else finalyStr += newString[i];
   }
   console.log(finalyStr);
 }
-
 
 StringChallenge(num);
